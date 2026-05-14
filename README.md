@@ -41,11 +41,11 @@ Challengers-Project/
 ├── shared_volume/                  # 컨테이너 간 공유 볼륨 마운트 포인트
 │   ├── code/                       # 사용자가 작성한 소스 코드 저장
 │   └── result/                     # 컴파일 및 빌드 결과 로그 저장
-├── sql/                            # 데이터베이스 스키마 관리
-│   ├── user.sql                    # 사용자 스키마 (파일명 소문자 변경)
-│   ├── matching_room.sql           # 매칭 룸 스키마 (파일명 소문자 변경)
-│   ├── challengers.sql             # 서비스 공통 스키마 (파일명 소문자 변경)
-│   ├── code_submit.sql             # 코드 제출 스키마 (파일명 소문자 변경)
-│   └── grading_result.sql          # 채점 결과 스키마 (파일명 소문자 변경)
+├── sql/                            # 데이터베이스 스키마 관리 (파일명 소문자 표준화)
+│   ├── user.sql                    # 사용자 스키마
+│   ├── matching_room.sql           # 매칭 룸 스키마
+│   ├── challengers.sql             # 서비스 공통 스키마
+│   ├── code_submit.sql             # 코드 제출 스키마
+│   └── grading_result.sql          # 채점 결과 스키마
 └── server.js                       # 메인 엔트리 포인트 (Express + Socket.io)
 ```

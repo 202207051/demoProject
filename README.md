@@ -21,7 +21,7 @@ Challengers-Project/
 │   ├── errorResponse.js            # 공통 에러 응답 객체
 │   └── globalExceptionHandler.js   # 전역 예외 처리기
 ├── service/                        # 핵심 비즈니스 로직
-│   ├── database/                   # DB 접근 및 레퍼지토리
+│   ├── database/                   # DB 접근 및 레포지토리
 │   │   ├── codeSubmission.js       # 코드 제출 비즈니스 로직
 │   │   ├── databaseService.js      # DB 트랜잭션 관리
 │   │   ├── user.js                 # 사용자 및 게임 결과 관리
@@ -42,10 +42,10 @@ Challengers-Project/
 │   ├── code/                       # 사용자가 작성한 소스 코드 저장
 │   └── result/                     # 컴파일 및 빌드 결과 로그 저장
 ├── sql/                            # 데이터베이스 스키마 관리
-│   ├── user.sql                    # 소문자 변경
-│   ├── matching_room.sql           # 소문자 변경
-│   ├── challengers.sql             # 소문자 변경
-│   ├── code_submit.sql             # 소문자 변경
-│   └── grading_result.sql          # 소문자 변경
+│   ├── user.sql                    # 사용자 스키마 (파일명 소문자 변경)
+│   ├── matching_room.sql           # 매칭 룸 스키마 (파일명 소문자 변경)
+│   ├── challengers.sql             # 서비스 공통 스키마 (파일명 소문자 변경)
+│   ├── code_submit.sql             # 코드 제출 스키마 (파일명 소문자 변경)
+│   └── grading_result.sql          # 채점 결과 스키마 (파일명 소문자 변경)
 └── server.js                       # 메인 엔트리 포인트 (Express + Socket.io)
 ```

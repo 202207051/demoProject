@@ -1,22 +1,11 @@
--- 유저 테이블 생성
-create table user
-{
-    -- 유저 테이블 ID
-    userId int primary key not null,
-    -- 닉네임
-    name varchar(100) not null,
-    -- 비밀번호
-    password varchar(100) not null,
-    -- 티어
-    userRank varchar(100) not null,
-    -- 대결 횟수
-    matchSum int not null,
-    -- 승리 횟수
-    winCnt int not null,
-    -- 패배 횟수
-    loseCnt int not null,
-    -- 프로필 이미지
-    profileImage number not null,
-    -- 자기소개서
-    introduce varchar(100) not null
-}
+CREATE TABLE user (
+    userId INT PRIMARY KEY NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    userRank VARCHAR(100) NOT NULL,
+    matchSum INT NOT NULL DEFAULT 0,
+    winCnt INT NOT NULL DEFAULT 0,
+    loseCnt INT NOT NULL DEFAULT 0,
+    profileImage INT NOT NULL, 
+    introduce VARCHAR(100) NOT NULL
+);
